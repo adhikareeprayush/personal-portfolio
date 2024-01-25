@@ -34,4 +34,22 @@ scrollFunction = () => {
     }
 }
 
-//add animation to the sections while scrolling
+//tilt the section id project when srolling
+VanillaTilt.init(document.querySelectorAll(".project"), {
+    max: 25,
+    speed: 300
+});
+
+
+//use the scrollReveal library to animate the sections
+ScrollReveal().reveal('.project', {
+    delay: 500,
+    duration: 1000,
+    origin: 'bottom',
+    distance: '50px',
+    interval: 200
+});
+
+
+
+
