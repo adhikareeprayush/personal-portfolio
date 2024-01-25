@@ -34,4 +34,4 @@ scrollFunction = () => {
     }
 }
 
-
+//add animation to the sections while scrolling

@@ -18,6 +18,7 @@ html,body {
     color:#fff031;
     width: 100%;
     padding:10px;
+    scroll-behavior: smooth;
 }
 
 .greeting{
@@ -37,10 +38,9 @@ a{
 }
 
 section{
-    height: 100vh;
     width: 100%;
     position: relative;
-    padding:100px 200px;
+    padding: 50px 100px;
 }
 
 a:hover{
@@ -53,11 +53,7 @@ a:hover{
 }
 
 .main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
+    width: fit-content;
 
     /* Add animation */
     animation: fadeIn 1s ease-in-out;
@@ -161,7 +157,6 @@ h3.introductory{
 section .header{
     color:aliceblue;
     font-size: 30px;
-    margin-top: 20px;
     font-weight: 700;
 }
 
@@ -177,15 +172,20 @@ section .header{
     border: 1px solid #fff031;
     border-radius: 10px;
     box-shadow: 0 0 5px #fff031;
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
-
+    cursor:pointer;
 }
 
 .project-image{
     width: 100%;
     height: auto;
 
+}
+
+.category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .project-image img{
@@ -201,3 +201,91 @@ section .header{
     font-size: 20px;
     margin-top: 10px;
 }
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* Button */
+button{
+    outline:none;
+    border:none;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.btn-more{
+    background-color: transparent;
+    color: #fff031;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #fff031;
+    cursor: pointer;
+}
+
+.btn-more:hover{
+    background-color: #fff031;
+    color: #6096B4;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px){
+    section{
+        padding: 50px 20px;
+    }
+
+    .navigate a{
+        margin: 10px 0;
+    }
+
+    .project{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    section{
+        padding:10px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    h3.introductory{
+        font-size: 30px;
+    }
+
+    .navigate .nav-link a{
+        font-size: 14px;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
