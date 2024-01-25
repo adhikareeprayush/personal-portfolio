@@ -177,6 +177,7 @@ section .header{
     border: 1px solid #fff031;
     border-radius: 10px;
     box-shadow: 0 0 5px #fff031;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 
 }
